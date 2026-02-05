@@ -1,6 +1,6 @@
 ### NAME: RANJANI K
 
-### REG NO.: 212224230220
+### REG NO.: 212224230
 
 # Experiment-4
 ## ARMSTRONG NUMBER 
