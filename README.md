@@ -1,7 +1,3 @@
-### NAME: RANJANI K
-
-### REG NO.: 212224230
-
 # Experiment-4
 ## ARMSTRONG NUMBER 
 # Aim: Write a python program to check the number is Armstrong number or not and inspect for failures. 
@@ -19,32 +15,28 @@
 
 # Program
 ```
-def is_armstrong(n):
-    if not isinstance(n, int):
-        raise TypeError("Input must be an integer.")
-    if n < 0:
-        return False
-    digits = str(n)
-    power = len(digits)
-    total = sum(int(d)**power for d in digits)
-    return total == n
+x = input("Enter a number: ") 
+if x.isnumeric():  
+    x = int(x)  
+    temp = x  
+    cube = 0  
 
+    while temp > 0:  
+        digit = temp % 10  
+        cube += digit ** 3  
+        temp //= 10  
 
-try:
-    num = int(input("Enter a number: "))
-    if is_armstrong(num):
-        print(f"{num} is an Armstrong number.")
-    else:
-        print(f"{num} is not an Armstrong number.")
-
-except ValueError:
-    print("Input Error: Please enter a valid integer.")
-except Exception as e:
-    print("Unexpected Error:", e)
+    if cube == x:  
+        print("Armstrong Number")  
+    else:  
+        print("Not an Armstrong Number")  
+else:  
+    print("Enter a Positive Integer.")
 ```
 # Output
-<img width="742" height="60" alt="image" src="https://github.com/user-attachments/assets/91f79a8f-6d2a-49be-802b-2ecb1b813493" />
-<img width="745" height="76" alt="Screenshot 2025-08-30 104231" src="https://github.com/user-attachments/assets/65ef018e-c528-40e6-9c7b-0726733223ef" />
+
+<img width="528" height="135" alt="image" src="https://github.com/user-attachments/assets/dc849863-85d6-4145-a689-d5ef92af7b9f" />
+
 
 # Result
 Thus, the python program to check the number is Armstrong number or not implemented and the output is verified successfully.
